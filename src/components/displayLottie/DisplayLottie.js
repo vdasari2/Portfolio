@@ -18,3 +18,4 @@ export default class DisplayLottie extends Component {
     );
   }
 }
+

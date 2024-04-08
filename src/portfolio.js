@@ -21,12 +21,12 @@ const illustration = {
 
 const greeting = {
   username: "Vishnu Preetham",
-  title: "Hi all, I'm Vishnu Preetham Reddy Dasari",
+  title: "Hi, I'm Vishnu Preetham Reddy",
   subTitle: emoji(
-    "I am a skilled Data Analyst with experience working in Consumer Credit, Risk. with expertise in Data Analytics, SQL, Python, Tableau, I have successfully contributed to Risk Analysis, modernised DWH platforms and executed impactful data projects."
+    "I am a skilled Data Analyst with experience in Product and Risk Analytics. With expertise in Data Analytics, Advanced SQL, Python, Pandas, Tableau, I have successfully contributed to Product and Risk Analysis, modernised DWH platforms and executed impactful data projects."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1o8zjQVe5ybw_Vnfcs54qAwmUwy2M7uf7/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Charting success as a Risk - conscious Data Analyst",
+  // subTitle: "Charting success as a Risk - conscious Data Analyst",
   skills: [
     emoji(
       "⚡ Proficiently assess and analyze complex financial data to identify potential risks and opportunities using Python and SQL, enabling informed decision-making by stakeholders."
@@ -69,12 +69,16 @@ const skillsSection = {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
+    // {
+    //   skillName: "Database",
+    //   fontAwesomeClassname: "fab fa-diamond"
+    // },
     {
-      skillName: "Database",
-      fontAwesomeClassname: "fab fa-diamond"
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -85,9 +89,9 @@ const educationInfo = {
     {
       schoolName: "Arizona State University",
       logo: require("./assets/images/ASU-logo.png"),
-      subHeader: "Master of Science",
+      subHeader: "Master of Science in CSE",
       duration: "August 2021 - December 2022",  
-      desc: "Courses: Data Science for Software Engineers, Statistical Machine Learning, Advance Data Structures and Algorithms, Foundations of Software Engineering",
+      //desc: "Courses: Data Science for Software Engineers, Statistical Machine Learning, Advance Data Structures and Algorithms, Foundations of Software Engineering",
     }
   ]
 };
@@ -99,15 +103,19 @@ const techStack = {
   experience: [
     {
       Stack: "SQL", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Python",
-      progressPercentage: "80%"
+      progressPercentage: "95%"
     },
     {
-      Stack: "Analytic Skills",
-      progressPercentage: "80%"
+      Stack: "Analytical Skills",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Visualization Skills",
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -119,17 +127,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Data Analyst, Risk (Consumer Credit)",
+      role: "Data Analyst, Product and Risk Analytics",
       company: "Lending Point",
       companylogo: require("./assets/images/lp1.png"),
       date: "June 2023 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Analyzed historical data and conducted in depth analysis of financial data using Python and SQL leading to the formulation of a comprehensive risk mitigation strategy.",
-        "Leveraged Python Jupyter notebooks for data preprocessing, analysis, model building in CK LB MBE (Credit Karma LightBox Model Building Environment).",
-        "Utilized SQL and GCP services for data storage and processing, optimizing queries and adhoc analysis.",
-        "Created interactive Tableau visualizations to present complex data in a clear and understandable manner, aiding stakeholders in making informed decisions.",
-        "Collaborated with cross - functional teams (Collections and Pricing Teams) to perform ad-hoc analysis, responding to immediate business needs and driving data - driven solutions."
+        "Conducted credit risk analysis on a portfolio of loans using SQL, Python, statistical models and researched on industry trends to assess potential credit risks to identify key areas of losses which reduced overall risk exposure by 12%.",
+        "Developed risk strategies upon data science models to optimize financial statistics (Delinquency, Charge-Offs etc), improve channel performances (Offer Selected %, Funded % etc.) through swap set, cohort analysis, in time and out of time sampling.",
+        "Developed & oversaw in depth compliance monitoring process for 12 aggregators & partners, strengthening investor relations and driving 30% increase of leads."
       ]
     },
     {
@@ -143,16 +149,15 @@ const workExperiences = {
         "Migration of 47 Downstate DataMart’s – Active (14), Inactive (33) – Lift and shift of 33 inactive DataMart’s from 8370 tables into Snowflake staging layer.",
         "Migrated all active data ingestion flows (688) from Informatica (Downstate) to Matillion for all active DataMart’s using Python and SQL",
         "Used SQL to replace existing transformation logic in Oracle procedures with Snowflake.",
-        "Assisted Project Managers and Developers in designing ETL solution and development to produce reporting, dashboarding, and data analytics deliverables."
       ]
     },
     {
-      role: "Full Stack Developer",
+      role: "Developer (Capstone Project)",
       company: "PICMG",
       project: "Redfish Server Implementation using OpenAPI",
       companylogo: require("./assets/images/picmg.png"),
       date: "August 2022 – December 2022",
-      desc: "Capstone Project - Redfish Server Implementation using OpenAPI",
+      desc: "Redfish Server Implementation using OpenAPI",
       descBullets: [
         "DMTF’s Redfish is a standard designed to deliver simple and secure management for converged, hybrid IT and the Software-Defined Data Center.",
         "Created the database tables and initialized the data for Account, Session, Task, Root, and Event services from the mockups bundle.",
@@ -162,15 +167,15 @@ const workExperiences = {
       ]
     },
     {
-      role: "Data Analyst Intern",
+      role: "Junior Data Analyst",
       company: "Kanor Systems Inc",
       companylogo: require("./assets/images/ks.jpeg"),
-      date: "Feb 2020 – Aug 2021",
+      date: "July 2020 – June 2021",
       descBullets: [
-        "Collected data from internal sources and employed Data Wrangling, Data Profiling, Data Validation and Data Visualization techniques for analyzing and interpreting data.",
-        "Created an automation script to extract, process large amounts of data using Python.",
-        "Implemented procedures to reduce network traffic and improve round-trip response time using SQL to get specific required data from Snowflake data warehouse.",
-        ""
+        "Conducted data analysis using Data Wrangling, Python automation, and SQL optimization on Snowflake data warehouse.",
+        "Performed Exploratory Data Analysis (EDA) using Pandas and NumPy for predictive modeling, applying statistical techniques to derive meaningful conclusions and recommendations.",
+        "Created Python scripts for task automation, including generating daily reports and facilitating email communications.",
+        "Collaborated on reusable code and Data Pipelines, enhancing analytic efficiency by 15%, tracked project progress with JIRA, and organized project-related materials in Confluence."
       ]
     }
   ]
@@ -197,24 +202,50 @@ const bigProjects = {
         "Made use of Python and Web Scraping (Selenium Library) to scrape players information and statistics from a website and extract structured data using pandas.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit Github",
+          url: "https://github.com/vdasari2/Player-Data-Extraction-using-Web-Scraping"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      // image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Stock Market Real Time Analytics Project",
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Loan Default Prediction",
       projectDesc:
-        "Created a streaming pipeline to fetch data in real – time from API to transform data to JSON format which can be readily inserted to BigQuery, then publish it to Pub Sub topic.",
+        "Contributed to improved lending decision-making processes by delivering accurate predictions of loan defaults using Python, Pandas, Machine Learning, highlighting skills in data analysis, preprocessing, modeling, and evaluation.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Github",
+          url: "https://github.com/vdasari2/Loan-Default-Prediction-"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    // {
+    //   // image: require("./assets/images/nextuLogo.webp"),
+    //   projectName: "Stock Market Real Time Analytics Project",
+    //   projectDesc:
+    //     "Created a streaming pipeline to fetch data in real – time from API to transform data to JSON format which can be readily inserted to BigQuery, then publish it to Pub Sub topic.",
+    //   // footerLink: [
+    //   //   {
+    //   //     name: "Visit Website",
+    //   //     //url: "http://nextu.se/"
+    //   //   }
+    //   // ]
+    // },
+    {
+      // image: require("./assets/images/nextuLogo.webp"),
+      projectName: "API Data Exploration and Analysis",
+      projectDesc:
+        "",
+      footerLink: [
+        {
+          name: "Visit Github",
+          url: "https://github.com/vdasari2/API-Data-Exploration-and-Analysis-"
         }
       ]
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -336,14 +367,25 @@ const podcastSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1 (315) – 790 – 7654",
-  email_address: "vishnupreethamreddy@gmail.com"
-};
+// const contactInfo = {
+//   title: emoji("Contact Me ☎️"),
+//   subtitle:
+//     "Discuss a project or just want to say hi? My Inbox is open for all.",
+//   number: "+1 (315) – 790 – 7654",
+//   email_address: "vishnupreethamreddy@gmail.com"
+// };
 
+const contactInfo = {
+  title: emoji("Contact me!"),
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all. "
+    ,
+    
+  email_address: "vishnupreethamreddy@gmail.com",
+  locationlogo: require("./assets/images/location.png"),
+  location:"Atlanta, Georgia",
+  subsection: "Open for opportunities: Yes"
+};
 // Twitter Section
 
 const twitterDetails = {

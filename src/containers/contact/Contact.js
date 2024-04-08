@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+// import email from "../../assets/lottie/email";
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
@@ -24,6 +24,7 @@ export default function Contact() {
             >
               {contactInfo.subtitle}
             </p>
+
             <div
               className={
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
@@ -47,20 +48,28 @@ export default function Contact() {
               >
                 {contactInfo.email_address}
               </a>
+              <p className={isDark ? "dark-mode" : ""}>
+                <img
+                  src={contactInfo.locationlogo}
+                  alt="Location Pin"
+                  className="location-pin"
+                />
+                {contactInfo.location}
+              </p>
+              <p className={isDark ? "dark-mode" : ""}>{contactInfo.subsection}</p>
+
               <br />
               <br />
               <SocialMedia />
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
+            
+              <img 
+                alt="Vishnu Preetham Reddy Dasari"
+                src={require("../../assets/images/vd.png")}
               ></img>
-            )}
+
           </div>
         </div>
       </div>
