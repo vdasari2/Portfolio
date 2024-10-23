@@ -23,10 +23,10 @@ const greeting = {
   username: "Vishnu Preetham",
   title: "Hi, I'm Vishnu Preetham Reddy",
   subTitle: emoji(
-    "I am skilled Data Analyst with experience in Product and Risk Analytics. With expertise in Data Analytics, Advanced SQL, Python, Pandas, Tableau, I have successfully contributed to Product and Risk Analysis, modernised DWH platforms and executed impactful data projects."
+    "Data Scientist and Analyst with expertise in SQL, Python, and advanced machine learning algorithms, focused on credit risk analytics, data engineering, and business intelligence. Proven ability to optimize risk strategies, build predictive models, and enhance data infrastructure using cloud platforms such as AWS and GCP. Skilled in developing and automating data pipelines, creating interactive dashboards, and deploying end-to-end ML solutions. Adept at leveraging statistical techniques and ML models to generate actionable insights, drive strategic decision-making, and mitigate operational risks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1C_C0JM-J3jWcQxzU0Sw-xuugvTYSJzv6/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1B0YrHG9Sl_sNlFE6LWkmO6OXQQIlAlWt/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -133,9 +133,10 @@ const workExperiences = {
       date: "June 2023 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Conducted credit risk analysis on a portfolio of loans using SQL, Python, statistical models and researched on industry trends to assess potential credit risks to identify key areas of losses which reduced overall risk exposure by 12%.",
-        "Developed risk strategies upon data science models to optimize financial statistics (Delinquency, Charge-Offs etc), improve channel performances (Offer Selected %, Funded % etc.) through swap set, cohort analysis, in time and out of time sampling.",
-        "Developed & oversaw in depth compliance monitoring process for 12 aggregators & partners, strengthening investor relations and driving 30% increase of leads."
+        "Performed comprehensive credit risk assessment on a $100M loan portfolio using Python, Pandas, NumPy, BigQuery SQL, and Tableau; employed Decision Trees, Random Forests, XGBoost by utilizing Bureau, Clarity, LexisNexis data to identify key risk indicators, which led to a 17% reduction in potential losses through targeted risk mitigation strategies.",
+        "Leveraged CK LB MBE (Credit Karma Model Building Environment) – Jupyter Notebooks for data preprocessing, analysis on population sample, applicants, and tradelines (Equifax, TU, Experian) datasets to identify credit attributes contributing to overall higher delinquency rates.",
+        "Utilized Chi – square tests, ANOVA, and Recursive Feature Elimination (RFE) to validate the statistical significance of variables, ensuring model reliability and optimizing the feature selection process.",
+        "Developed data-driven risk strategies and revamped grading mechanisms using swap sets, cohort analysis, and time series analysis; reduced overall risk exposure by 12% through optimized financial metrics such as ALR, RAY and Delinquency %."
       ]
     },
     {
