@@ -23,7 +23,7 @@ const greeting = {
   username: "Vishnu Preetham",
   title: "Hi, I'm Vishnu Preetham Reddy",
   subTitle: emoji(
-    "I am a skilled Data Analyst with experience in Product and Risk Analytics. With expertise in Data Analytics, Advanced SQL, Python, Pandas, Tableau, I have successfully contributed to Product and Risk Analysis, modernised DWH platforms and executed impactful data projects."
+    "I am skilled Data Analyst with experience in Product and Risk Analytics. With expertise in Data Analytics, Advanced SQL, Python, Pandas, Tableau, I have successfully contributed to Product and Risk Analysis, modernised DWH platforms and executed impactful data projects."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1C_C0JM-J3jWcQxzU0Sw-xuugvTYSJzv6/view?usp=sharing", // Set to empty to hide the button
